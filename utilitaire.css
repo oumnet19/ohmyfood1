@@ -1,0 +1,31 @@
+.fc{
+    display: flex;
+    justify-content: center;
+}
+.fca{
+    display: flex;
+    justify-content: space-between;
+}
+.fcb{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.fcbd{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.fcba{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+    
+
+@font-face {
+    font-family: Shrikhand;
+    src: url(font-face/Shrikhand-Regular.ttf);
+}

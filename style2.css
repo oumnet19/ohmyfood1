@@ -1,0 +1,452 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body {
+  position: fixed;
+  margin: 0;
+  background: white;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.overlay {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  pointer-events: none;
+  position: fixed;
+  inset: 0;
+}
+
+.loader {
+  position: absolute;
+  bottom: 49px;
+  -webkit-animation: rotate45 5s forwards;
+          animation: rotate45 5s forwards;
+  background: #9356DC;
+  width: 90px;
+  height: 90px;
+  border-radius: 15px;
+}
+
+@-webkit-keyframes disparate {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes disparate {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes rotate45 {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(720deg);
+            transform: rotate(720deg);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes rotate45 {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(720deg);
+            transform: rotate(720deg);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.fa-heart {
+  color: black;
+  cursor: pointer;
+}
+
+.fa-heart :hover {
+  color: transparent;
+}
+
+.heart-fill {
+  opacity: 0;
+  position: absolute;
+  bottom: 15px;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(333deg, #ff79da 0%, #9356dc 100%);
+}
+
+.heart-fill:hover {
+  -webkit-transition-delay: .1s;
+          transition-delay: .1s;
+  -webkit-transition-duration: .5s;
+          transition-duration: .5s;
+  opacity: 1;
+  background-position: 0px 0px;
+}
+
+.site {
+  -webkit-animation: disparate 3s forwards;
+          animation: disparate 3s forwards;
+}
+
+.header__logo h1 {
+  font-size: 35px;
+  font-family: shrikhand;
+}
+
+.header__logo a {
+  text-decoration: none;
+  color: black;
+}
+
+.restaurant__card-image {
+  position: relative;
+}
+
+.restaurant__card-image img {
+  width: 100%;
+  height: 178px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+}
+
+.restaurant__card-new p {
+  position: absolute;
+  left: 351px;
+  background: #8bdfb7;
+  color: green;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 3px;
+}
+
+.restaurant__card-description {
+  margin-left: 12px;
+}
+
+.restaurant__card-text {
+  font-size: 17px;
+  font-weight: bolder;
+  margin-bottom: 1px;
+}
+
+.restaurant__card-street {
+  margin-top: 1px;
+}
+
+.restaurant {
+  background: #f3f3f3;
+  padding-bottom: 53px;
+  padding-top: 53px;
+  margin-top: 46px;
+}
+
+.restaurant__bloc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 459px;
+  -webkit-box-shadow: 0px 5px 11px 0px #b4b0b0;
+          box-shadow: 0px 5px 11px 0px #b4b0b0;
+  border-radius: 24px;
+  margin-bottom: 28px;
+}
+
+.restaurant__bloc:hover {
+  -webkit-transition: .5s;
+  transition: .5s;
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+  opacity: 0,5;
+  -webkit-box-shadow: 0px 0px 16px #9356DC;
+          box-shadow: 0px 0px 16px #9356DC;
+}
+
+.restaurant__title {
+  text-align: start;
+  margin-left: 67px;
+  width: 100%;
+}
+
+.restaurant a {
+  color: black;
+  text-decoration: none;
+}
+
+.location {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background: #f3f3f3;
+  -webkit-box-shadow: 0px -2px 7px 0px grey;
+          box-shadow: 0px -2px 7px 0px grey;
+  width: 100%;
+}
+
+.location__icon {
+  margin-left: -33px;
+}
+
+.location__icon span {
+  font-weight: 700;
+  padding: 15px;
+}
+
+.reserver {
+  background: #fafafa;
+  padding-bottom: 70px;
+}
+
+.reserver h2 {
+  max-width: 292px;
+  text-align: center;
+  font-weight: bolder;
+}
+
+.reserver p {
+  max-width: 350px;
+  text-align: center;
+  font-size: larger;
+}
+
+button {
+  opacity: 1;
+  -webkit-box-shadow: 2px 3px 11px #bcb5b5;
+          box-shadow: 2px 3px 11px #bcb5b5;
+  border-style: none;
+  color: white;
+  padding: 20px;
+  font-size: 19px;
+  background: linear-gradient(175deg, #ff79da 0%, #9356dc 98%);
+  border-radius: 31px;
+}
+
+button:hover {
+  opacity: 0,8;
+  cursor: pointer;
+  -webkit-transition: .3s;
+  transition: .3s;
+  -webkit-box-shadow: 0px 0px 15px rgba(88, 88, 88, 0.8);
+          box-shadow: 0px 0px 15px rgba(88, 88, 88, 0.8);
+}
+
+.choose {
+  margin-left: 50px;
+}
+
+.choose__bloc {
+  width: 100%;
+  margin-left: -3px;
+}
+
+.choose h2 {
+  margin-left: -12px;
+}
+
+.choose__number {
+  background-color: #9356DC;
+  color: white;
+  padding: 3px 8px 3px 8px;
+  border-radius: 500px;
+  position: absolute;
+  left: 31px;
+}
+
+.choose__container {
+  margin-bottom: 32px;
+  opacity: 1;
+  width: 97%;
+  border-radius: 20px;
+  background: #F6F6F6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0px 0px 12px #c4bdbd;
+          box-shadow: 0px 0px 12px #c4bdbd;
+}
+
+.choose__container:hover {
+  -webkit-box-shadow: 0px 0px 25px #c4bdbd;
+          box-shadow: 0px 0px 25px #c4bdbd;
+  background: #e0d1f0;
+  opacity: 0.8;
+}
+
+.choose__container:hover .choose__icon {
+  color: #9356DC;
+  opacity: 1;
+}
+
+.choose__icon {
+  position: absolute;
+  left: 92px;
+  color: grey;
+}
+
+.choose__text {
+  margin: 26px;
+  font-weight: bolder;
+  padding-left: 69px;
+}
+
+footer {
+  padding-top: 11px;
+  padding-bottom: 38px;
+  background: #3d3a3a;
+  color: white;
+}
+
+footer ul {
+  list-style-type: none;
+}
+
+footer ul :hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+footer p {
+  margin-left: 40px;
+  font-family: shrikhand;
+  color: white;
+}
+
+footer a {
+  color: #f0e8e8;
+  text-decoration: none;
+}
+
+footer i {
+  margin-right: 5px;
+}
+
+@media screen and (min-width: 768px) {
+  body{
+    position: fixed;
+    width: 100%;
+  }
+  .choose {
+    margin-left: 0;
+  }
+  .choose__bloc {
+    color: black;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 100%;
+  }
+  .choose__container {
+    width: 30%;
+    margin-left: 37px;
+  }
+  .choose__number {
+    margin-left: -12px;
+    position: unset;
+  }
+  .choose__icon {
+    position: unset;
+    margin-left: 31px;
+  }
+  .choose__text {
+    padding-left: unset;
+  }
+  .choose h2 {
+    font-size: 26px;
+    margin-left: 28px;
+  }
+  .restaurants {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .restaurants__title {
+    font-size: 30px;
+  }
+  footer {
+    margin: 0;
+    padding-bottom: 4px;
+    padding-top: 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  footer p {
+    font-size: 26px;
+    margin-left: 0;
+  }
+  footer ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    font-size: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    margin: 0;
+    margin-bottom: 11px;
+  }
+  footer i {
+    margin-left: 6px;
+  }
+}
+/*# sourceMappingURL=style2.css.map */

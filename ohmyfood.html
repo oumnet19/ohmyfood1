@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="utilitaire.css">
+    <link rel="stylesheet" href="mixins.css">
+    <script src="https://kit.fontawesome.com/20f93b5d41.js" crossorigin="anonymous"></script>
+    <title>oh my food</title>
+</head>
+<body>
+    <div class="overlay">
+        <div class="loader"></div>
+    </div>
+    <div class="site">
+    <header>
+        <div class="header__logo fc">
+            <a href="logo">
+                <h1>ohmyfood</h1>
+            </a>  
+        </div>      
+        <div class="location fc">
+            <div class="location__icon">
+                <i class="fa-solid fa-location-dot"></i>
+                <span>Paris, Belleville</span>
+            </div>    
+        </div>
+        <div class="reserver fcb">
+            <h2>Réservez le menu qui vous convient</h2>
+            <p>Découvrez des restaurant d'exception, séléctionnés par nos soins.</p>
+            <button>Explorer nos restaurants</button>
+        </div>
+    </header>
+    <main>
+        <section class="choose fcbd ">
+            <h2>Fonctionnement</h2>
+            <div class="choose__bloc ">
+                <div class="choose__container ">
+                    <div class="choose__number">1</div>
+                    <div class="choose__icon">
+                        <i class="fa-solid fa-mobile-screen-button"></i>
+                    </div>    
+                    <p class="choose__text">Choisissez un restaurant</p>
+                </div> 
+                <div class="choose__container">
+                    <div class="choose__number">2</div>
+                    <div class="choose__icon">
+                        <i class="fa-solid fa-list"></i>
+                    </div>    
+                    <p class="choose__text">Composez votre menu</p>
+                </div>
+                <div class="choose__container ">
+                    <div class="choose__number">3</div>
+                    <div class="choose__icon">
+                        <i class="fa-solid fa-store"></i>
+                    </div>    
+                    <div class="choose__text">Dégustez au restaurant</div>
+                </div>
+            </div> 
+        </section>
+        <section class="restaurant fcb">
+            <h2 class="restaurant__title">Restaurants</h2>
+            <div class="restaurants ">
+              <a href="./la_palette_du_gout.html">
+                <div class="restaurant__bloc">
+                    <div class="restaurant__card-image">
+                            <div class="restaurant__card-new">
+                            <p>Nouveau</p>
+                        </div>
+                        <img src="./restaurants/menilmontant.jpg" alt="menilmontant"> 
+                    </div>
+                    <div class="restaurant__card-entitled fca">
+                        <div class="restaurant__card-description">
+                            <p class="restaurant__card-text">La palette du goût</p>
+                            <p class="restaurant__card-street">Ménilmontant</p>
+                        </div>
+                        <div class="restaurant__card-icon">
+                            <span class="fa-stack fa-2x">
+                                <i class="fas fa-heart fa-stack- heart-fill"></i>
+                                <i class="far fa-heart fa-stack- heart"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div> 
+              </a> 
+              <a href="./la_note_enchantee.html">     
+                <div class="restaurant__bloc">    
+                    <div class="restaurant__card-image">
+                        <div class="restaurant__card-new">
+                            <p>Nouveau</p>
+                        </div>
+                        <img src="./restaurants/charonne.jpg" alt="charonne"> 
+                    </div>
+                    <div class="restaurant__card-entitled fca">
+                        <div class="restaurant__card-description">
+                            <p class="restaurant__card-text">La note enchantée</p>
+                            <p class="restaurant__card-street">Charonne</p>
+                        </div>
+                        <div class="restaurant__card-icon">
+                            <span class="fa-stack fa-2x">
+                                <i class="fas fa-heart fa-stack- heart-fill"></i>
+                                <i class="far fa-heart fa-stack- heart"></i>
+                            </span>
+                        </div>     
+                    </div>
+                </div>
+              </a> 
+              <a href="./a_la_francaise-1.html">     
+                <div class="restaurant__bloc">
+                    <div class="restaurant__card-image">
+                        <img src="./restaurants/cite_rouge.jpg" alt="cite_rouge"> 
+                    </div>
+                    <div class="restaurant__card-entitled fca">
+                        <div class="restaurant__card-description">
+                            <p class="restaurant__card-text">à la française</p>
+                            <p class="restaurant__card-street">Cité Rouge</p>
+                        </div>
+                        <div class="restaurant__card-icon">
+                            <span class="fa-stack fa-2x">
+                                <i class="fas fa-heart fa-stack- heart-fill"></i>
+                                <i class="far fa-heart fa-stack- heart"></i>
+                             </span> 
+                        </div>
+                    </div>
+                </div>
+              </a>
+              <a href="./le_delice_des_sens.html">  
+                <div class="restaurant__bloc">     
+                    <div class="restaurant__card-image">
+                        <img src="./restaurants/folie_mericourt.jpg" alt="folie_mericourt"> 
+                    </div>
+                    <div class="restaurant__card-entitled fca">
+                        <div class="restaurant__card-description">
+                            <p class="restaurant__card-text">Le délice des sens</p>
+                            <p class="restaurant__card-street">Folie-Méricourt</p>
+                        </div>
+                        <div class=" restaurant__card-icon">
+                            <span class="fa-stack fa-2x">
+                                <i class="fas fa-heart fa-stack- heart-fill"></i>
+                                <i class="far fa-heart fa-stack- heart"></i>
+                            </span> 
+                        </div>
+                    </div>    
+                </div>
+              </a>  
+            </div>    
+        </section>
+    </main>
+    <footer>
+        <div class="footer__logo">
+            <a href="logo1">
+                <p>ohmyfood</p>
+             </a> 
+        </div>     
+        <ul>
+            <li>
+                <i class="fa-solid fa-utensils"> </i>
+                 Proposer un restaurant
+            </li>
+            <li>
+                <i class="fa-solid fa-handshake-angle"></i>
+                 Devenir partenaire
+            </li>
+            <li>Mention légales</li>
+            <li><a href="mailto:contact@ohmyfood.fr">contact</a></li>
+        </ul>
+    </footer>
+   </div> 
+</body>
+</html>
+    
+        
+                 
+              
+                
+    
+
+
+
+
+
+
+
+
+                        
+                          
+                    
+                        
+
+           
+
+
+
+
+
+
+

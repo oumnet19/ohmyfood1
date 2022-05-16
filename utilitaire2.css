@@ -1,0 +1,18 @@
+.fc{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.fcb{
+    display: flex;
+    flex-direction: column;
+    
+}
+.fca{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
